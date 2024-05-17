@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shaurya Tushar ∙ Socials</title>
+  <title>Shaurya Tushar - Socials</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main/style.css">
-  <link rel="icon" type="image/png" href="pig.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="pictures/pig.png">
+  <title>Shaurya Tushar: Socials</title>
   <style>
     .navbar {
       background-color: #333;
       overflow: auto;
+      float: right;
+      width: 60%;
       margin-left: 40%;
       border-radius: 40px;
     }
@@ -23,7 +26,7 @@
       margin: 13px 20px
       }
     .navbar li a{
-      padding: 30px 40px;
+      padding: 30px 15px;
       text-decoration:none;
     }
     @margin screen and (max-width: 912px) {
@@ -37,21 +40,58 @@
     .navbar li a:active{
       background-color: #04AA6D;
     }
+    @media only screen and (max-width: 1072px) {
+      .navbar {
+        margin-left: 40%;
+        overflow: auto;
+      }
+      .navbar li a:hover {
+        background-size: 50%;
+      }
+      .navbar li a {
+       padding: 30px 14px;
+      }
+      .logo {
+        padding-top: 0%;
+      }
+    } 
+    @media screen and (max-width: 822px) {
+      #menu {
+        margin-right: -10.9%;
+      }
+    }
   </style>
 </head>
-<body>
+<body style="background-position: absolute; background-repeat: no-repeat; background-size: cover;">
   <header>
       <nav class="navbar">
       <ul>
       <li><a class="active" style="font-size: 30px; color: white; background-color: #04AA6D;" href="socials.html"> Socials</a></li>
-      <li><a style="font-size: 30px; color: white;" href="about.html"> About</a>          </li>
+      <li><a style="font-size: 30px; color: white;" href="about.html"> About</a></li>
       <li><a style="font-size: 30px; color: white;" href="index.html"> Home</a></li>
       </ul>
       </nav> 
+      <input type="checkbox" id="check">
+       <label for= "check">
+         <img src="pictures/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="menu"></img>
+       </label>
+       <label id="overlay" for="check"></label>
+      </input>
+      <div class="sidebar">
+        <header>
+          <nav>
+          <ul>
+          <li><a style="font-size: 30px; color: white; font-family:montserrat; line-height: 75px;" href="index.html">               Home</a></li>
+          <li><a  style="font-size: 30px; color: white; font-family:montserrat; line-height: 75px;" href="about.html"> About</a></li>
+          <li><a style="font-size: 30px; color: white; font-family:montserrat; line-height: 75px; background-color: #04AA6D;" href="socials.html"> Socials</a></li>
+          </ul>
+          </nav> 
+        </header>
+      </div>
     </header>
     <header>
       <a href="index.html"> 
-        <img style="margin-top: -80px;" width= "300px" height="80px" src="logo.png"></img>
+        <img style="margin-top: -80px;" width= "35%" height="80px" src="pictures/logo.png" class="logo"></img>
       </a>
   </header>
   <br>
@@ -60,7 +100,7 @@
   <br>
     <div style="padding-left:15px; display: flex;">
     <a href="https://www.instagram.com/shaurya.tushar/">
-    <img style="padding-left: 34px;" src="instagram.png" width="320px" height="130px"></img>
+    <img style="padding-left: 34px;" src="pictures/instagram.png" width="320px" height="130px"></img>
     </a>
       <div class="hover1" style="padding-top: 3%">
         <style>
@@ -68,16 +108,16 @@
             color:#FE2E64;
           }
         </style>
-      <a href="https://www.instagram.com/shaurya.tushar/" style="text-decoration: none; color: black; padding-left: 65%; padding-top:3%;">
-      <font style="font-size: 38px; font-family: cursive;"> @shaurya.tushar</font>
+      <a href="https://www.instagram.com/shaurya.tushar/" style="text-decoration: none; color: black; padding-left: 210px; padding-top:3%;">
+      <font style="font-size: 38px; font-family: cursive;" class="instagram"> @shaurya.tushar</font>
       </a>
       </div>
     </div>
     <br>
     
     <div style="display: flex;">
-      <a href="https://discord.gg/R4CdTU9b7f">
-      <img style="padding-left: 25%;" src="discord.png" width="280px" height="130px"></img>
+      <a href="">
+      <img style="padding-left: 25%;" src="pictures/discord.png" width="280px" height="130px"></img>
       </a>
       <div class="hover2" style="padding-top: 3%">
       <style>
@@ -85,8 +125,8 @@
           color:#4000FF;
         }
       </style>
-      <a href="https://discord.gg/R4CdTU9b7f" style="text-decoration: none; color: black; padding-left: 185px; padding-top:3%;">
-      <font style="font-size: 38px; padding-left: 21%; padding-top:3%; font-family: cursive;">ez.mrindia7#5633</font>
+      <a href="https://discord.com/" style="text-decoration: none; color: black; padding-left: 190px; padding-top:3%;">
+      <font style="font-size: 38px; padding-left: 21%; padding-top:3%; font-family: cursive;" class="discord">ez.mrindia7#5633</font>
       </a>
       </div>
     </div>
@@ -94,7 +134,7 @@
     
     <div style="display: flex;">
       <a href="https://www.youtube.com/c/ShauryaTushar">
-      <img style="padding-left: 22%;" src="youtube.png" width="283px" height="134px"></img>
+      <img style="padding-left: 22%;" src="pictures/youtube.png" width="283px" height="134px"></img>
       </a>
       <div class="hover3" style="padding-top: 3%">
       <style>
@@ -103,7 +143,7 @@
         }
       </style>
       <a href="https://www.youtube.com/c/ShauryaTushar" style="text-decoration: none; color: black; padding-left: 190px; padding-top:3%;">
-      <font style="font-size: 38px; padding-left: 21%; padding-top:4%; font-family: cursive;">ShauryaTushar</font>
+      <font style="font-size: 38px; padding-left: 21%; padding-top:4%; font-family: cursive;" class="youtube">ShauryaTushar</font>
       </a>
       </div>
     </div>
@@ -111,7 +151,7 @@
     
     <div style="display: flex;">
       <a href="https://github.com/shauryatushar">
-      <img style="padding-left: 25%;" src="github.png" width="250px" height="150px"></img>
+      <img style="padding-left: 25%;" src="pictures/github.png" width="250px" height="150px"></img>
       </a>
       <div class="hover4" style="padding-top: 3%">
       <style>
@@ -120,13 +160,13 @@
         }
       </style>
       <a href="https://github.com/shauryatushar" style="text-decoration: none; color: black; padding-left: 210px; padding-top:3%;">
-      <font style="font-size: 38px; padding-left: 24%; padding-top:4%; font-family: cursive;">shauryatushar</font>
+      <font style="font-size: 38px; padding-left: 24%; padding-top:4%; font-family: cursive;" class="github">shauryatushar</font>
       </a>
       </div>
     </div>
   <footer>
     <div class="copyright" style="text-align: center;">
-     <font style="font-size: 28px; text-align: center;"> Published on April 13, 2024 | Copyright © 2024 </font>   
+     <font style="font-size: 28px; padding-left: -10%; font-family: Verdana, Geneva, Tahoma, sans-serif;"> Published on _ | Copyright © 2024 </font>   
     </div>
   </footer>
 </body>
