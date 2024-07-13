@@ -1,0 +1,241 @@
+body {
+  height: 100%;
+  width: 100%;
+  resize: none;
+}
+
+.sidebar {
+  top: 60px;
+  right: 0;
+  float: right;
+  position: absolute;
+  display: none;
+  height: 330px;
+  width: 250px;
+  z-index: 10;
+  background-color: #1C2333;
+  border-radius: 3%;
+  padding: 15px 12px;
+  transition: all 1s ease-in-out;
+}
+
+.sidebar ul {
+  overflow: auto;
+  list-style: none;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 20px 30px;
+  line-height: 75%;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 30vh;
+}
+
+.sidebar li a:hover {
+  background-color: #ddd;
+}
+
+#check {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+@media only screen and (max-width: 999px) {
+  .navbar {
+    margin-left: 40%;
+    overflow: auto;
+  }
+
+  .navbar li a:hover {
+    background-size: 50%;
+  }
+
+  .navbar li a {
+    font-size: 20px;
+  }
+
+  .logo {
+    padding-top: 0%;
+    vertical-align: top;
+  }
+
+
+  @media screen and (min-width: 822px) {
+    .sidebar {
+      display: none;
+    }
+
+    .sidebar li a {
+      display: none;
+    }
+
+    #check {
+      display: none;
+    }
+
+    #menu {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 822px) {
+    .navbar {
+      visibility: hidden;
+    }
+
+    .logo {
+      width: 350px;
+      top: -20%;
+      position: relative;
+    }
+
+    #check {
+      float: right;
+      margin-top: -15%;
+      display: none;
+      color: white;
+    }
+
+    #menu {
+      float: right;
+      right: 0;
+      margin-top: -100px;
+      padding: 10px 15px;
+      cursor: pointer;
+      height: 60px;
+      size: auto;
+      display: flex;
+      
+    }
+
+    #check:checked~.sidebar {
+      right: 0;
+      display: flex;
+      transition: all 0.3s ease-in-out;
+      width: 250px;
+    }
+
+    #check:checked~#menu {
+      pointer-events: cursor;
+      opacity: 1;
+      display: flex;
+    }
+
+    #check:checked~#overlay {
+      z-index: 9;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    #check:checked~.body {
+      overflow-y: hidden;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    .intro {
+      line-height: -100px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 35%;
+      margin-right: 65%;
+      display: inline-block;
+      width: 400px;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+    .helppanel {
+      justify-content: center;
+      align-items: center;
+      margin-left: 25%;
+      width: 70% !important;
+    }
+    .features {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .btn {
+      padding-left: 20%;
+    }
+    
+  }
+  @media screen and (max-width: 745px) {
+    .intro {
+      margin-left: 25%;
+    }
+    .btn {
+      margin-left: 25% !important;
+    }
+  }
+  @media screen and (max-width: 551px) {
+    .typing {
+      font-size: 4.5vh !important;
+    }
+  }
+
+
+  @media screen and (max-width: 954px) {
+    .helppanel {
+      width: 60% !important;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    .container {
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .line1, line2 {
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 0;
+    }
+  }
+  @media screen and (max-width: 834px) {
+    .line1 {
+      font-size: 35px !important; 
+      padding-left: 15% !important;
+    }
+    .line3 {
+      font-size: 30px !important;
+      padding-left: 15% !important;
+    }
+  }
+  @media screen and (max-width: 705px) {
+    .line {
+      display: ;
+    }
+    .line3 {
+      padding-left: 20%;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .imageholder {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 664px) {
+    .quotes {
+      max-width: 664px;
+      display: table;
+    }
+  }
+
+  
+  
+  
