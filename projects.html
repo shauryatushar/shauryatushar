@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="pictures/pig.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <title>Shaurya Tushar- Projects</title>
+</head>
+  <style>
+    .navbar {
+      background-color: #1C2333;
+      overflow: hidden;
+      float: right;
+      margin-left: 40%;
+      border-radius: 40px;
+      width: 65%;
+    }
+    .navbar ul{
+      oveflow: auto;
+    }
+    .navbar li{
+      float: right;
+      list-style:none;
+      margin: 13px 20px
+      }
+    .navbar li a{
+      padding: 30px 15px;
+      text-decoration: none;
+    }
+    .navbar li a:hover{
+      background-color: #ddd;
+    }
+    .navbar li a:active{
+      background-color: #04AA6D;
+    }
+    .container1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .typing{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn {
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      left: 50%;
+      border: none;
+      color: #eeeeee;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 70px;
+      background: -webkit-linear-gradient(left, #A020F0 20%,#1805DB,#3E2F84);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      box-shadow: 0 0 3px black;
+      margin-top: -10px;
+    }
+    .helppanel {
+      background: -webkit-linear-gradient(left, #374564, #1C2333)
+    }
+    .commands {
+      background: -webkit-linear-gradient(left, #1f2525, #1C2333)
+    }
+    
+  </style>
+  <body bgcolor="white">
+    <header>
+        <nav class="navbar">
+        <ul>
+        <li><a style="font-size: 30px; color: white; background-color: #04AA6D;" href="projects.html"> Projects</a></li>
+        <li><a style="font-size: 30px; color: white;" href="socials.html"> Socials</a></li>
+        <li><a class="active" style="font-size: 30px; color: white;" href="about.html"> About</a></li>
+        <li><a style="font-size: 30px; color: white;" href="index.html"> Home</a></li>
+        </ul>
+        </nav> 
+      </header>
+      <input type="checkbox" id="check">
+        <label for= "check">
+          <img src="pictures/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="menu"></img>
+        </label>
+        <label id="overlay" for="check"></label>
+     </input>
+     <header>
+        <a href="index.html"> 
+          <img style="margin-top: -80px; position: top;" width= "350px" height=80px; src="pictures/logo.png"></img>
+        </a>
+     </header>
+      <div class="sidebar">
+        <header>
+          <nav>
+          <ul>
+          <li><a style="font-size: 30px; color: white; font-family:montserrat; line-height: 75px;" href="index.html"> Home</a></li>
+          <li><a  style="font-size: 30px; color: white; font-family:montserrat; line-height: 75px;" href="about.html"> About</a></li>
+          <li><a style="font-size: 30px; color: white; font-family:montserrat; line-height: 75px;" href="socials.html"> Socials</a></li>
+          <li><a style="font-size: 30px; color: white; font-family:montserrat; line-height: 75px; background-color: #04AA6D;" href="projects.html"> Projects</a></li>
+          </ul>
+          </nav> 
+        </header>
+      </div>
+
+  <div class="container1">
+    <div class="text1">
+    <font style="font-size: 50px; padding-top: 10%; color: #651FFF; font-family: Consolas, monaco, monospace;">Meet ShxryaAIBot!</font> 
+    </div>
+    <div class="penguin">
+    <img src="pictures/penguin.png" height="80%" width="100vh" style="display: inline;"></img>
+    </div>
+  </div>
+    
+    <br>
+    <div class="typing">
+      <font style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 10vh;"> I Can <span class="auto-type" style="color: #00e5ff"></span></font>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings : ["Customize Your Server", "Play Music", "Make Tickets", "Play Games"],
+        typeSpeed: 50,
+      })
+    </script>
+<div class="main">
+    <video class="intro" width="425px" height="40%" style="float: right;padding-top: 95px;" controls poster="pictures/poster.png">
+      <source src="pictures/intro.mp4" type="video/mp4">
+    </video>
+    <br>
+    <font class="features" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #ff3d00; font-size: 10vh; font-weight: 30px;"><u style="width:40%;">Features At a Glance</u></font>
+    <br>
+    
+    <div class="helppanel" style="width:55%; border-radius: 10px;">
+      <div class="command-name" style="display:flex;">
+        <font style="font-family: Verdana, Geneva, Tahoma, sans-serif;  color: white; font-size: 5vh; font-weight: 30">┆Radio
+        <img src="pictures/microphone.png" width="50vh" height="35vh" style="padding-top: 7.5px; float: inline-start; position:;"></img> 
+        </font>
+        <font style="font-family: Verdana, Geneva, Tahoma, sans-serif;  color: white; font-size: 5vh; font-weight: 30; padding-left: 115px;">┆Reaction Roles
+        <img src="pictures/smiley.png" width="50vh" height="35vh" style="padding-top: 7.5px; float: inline-start; position: ;"></img> 
+        </font>
+      </div>
+      <div class="commands" style="display:flex;">
+      <font style="font-family: Consolas, monaco, monospace; font-size: 5vh; color: white; font-weight: 30; background-color: #353F3E">
+        /radio help
+      </font>
+
+      <font style="font-family: Consolas, monaco, monospace; font-size: 5vh; color: white; font-weight: 30; background-color: #353F3E; float: right; padding-left: 9.5%;">
+        /reactionroles help
+      </font>
+      </div>
+
+      <div class="command-name" style="display:flex;">
+      <font style="font-family: Verdana, Geneva, Tahoma, sans-serif;  color: white; font-size: 5vh; font-weight: 30">┆Search
+        <img src="pictures/search.png" width="50vh" height="35vh" style="padding-top: 5px; float: inline-start; position: ;"></img> 
+        </font>
+        <font style="font-family: Verdana, Geneva, Tahoma, sans-serif;  color: white; font-size: 5vh; font-weight: 30; padding-left: 95px;">┆Server   Stats 
+        <img src="pictures/serverstats.png" width="50vh" height="40vh" style="padding-top: -10px; float: inline-start; position: ;"></img> 
+        </font>
+      </div>
+      <div class="commands" style="display:flex;">
+        <font style="font-family: Consolas, monaco, monospace; font-size: 5vh; color: white; font-weight: 30; background-color: #353F3E; float: right;">
+          /search help
+        </font>
+        <font style="font-family: Consolas, monaco, monospace; font-size: 5vh; color: white; font-weight: 30; background-color: #353F3E; float: right; padding-left: 8.5%;">
+          /serverstats help
+        </font>
+      </div>
+      
+      <div class="command-name" style="display:flex;">
+        <font style="font-family: Verdana, Geneva, Tahoma, sans-serif;  color: white; font-size: 5vh; font-weight: 30">┆Setup
+          <img src="pictures/setup.png" width="50vh" height="45vh" style="padding-top: 7.5px; float: inline-start; position: ;"></img> 
+          </font>
+          <font style="font-family: Verdana, Geneva, Tahoma, sans-serif;  color: white; font-size: 5vh; font-weight: 30; padding-left: 105px;">┆Soundboard
+          <img src="pictures/search.png" width="50vh" height="35vh" style="padding-top: 3px; float: inline-start; position: ;"></img> 
+          </font>
+      </div>
+      <div class="commands" style="display:flex;">
+          <font style="font-family: Consolas, monaco, monospace; font-size: 5vh; color: white; font-weight: 30; background-color: #353F3E; float: right;">
+            /setup help
+          </font>
+          <font style="font-family: Consolas, monaco, monospace; font-size: 5vh; color: white; font-weight: 30; background-color: #353F3E; float: right; padding-left: 90px;">
+            /soundboard help
+          </font>
+      </div>
+
+      <div class="command-name" style="display:flex;">
+        <font style="font-family: Verdana, Geneva, Tahoma, sans-serif;  color: white; font-size: 5vh; font-weight: 30">┆Tickets
+          <img src="pictures/tickets.png" width="50vh" height="45vh" style="padding-top: 7.5px; float: inline-start; position: ;"></img> 
+          </font>
+          <font style="font-family: Verdana, Geneva, Tahoma, sans-serif;  color: white; font-size: 5vh; font-weight: 30; padding-left: 65px;">┆Sticky Messages
+          <img src="pictures/sticky-messages.png" width="50vh" height="35vh" style="padding-top: 3px; float: inline-start; position: ;"></img> 
+          </font>
+      </div>
+      <div class="commands" style="display:flex;">
+          <font style="font-family: Consolas, monaco, monospace; font-size: 5vh; color: white; font-weight: 30; background-color: #353F3E; float: right;">
+            /tickets help
+          </font>
+          <font style="font-family: Consolas, monaco, monospace; font-size: 5vh; color: white; font-weight: 30; background-color: #353F3E; float: right; padding-left: 30px;">
+            /stickymessages help
+          </font>
+      </div>
+    </div>
+</div>
+    <br>
+    <br>
+    <div style="align-items: center; justify-content: center; left: 50%;">
+      <button class="btn" style="width: 55vh; height: 45px; margin-left: 35%; padding: 50px 200px; border-radius: 10px; align-items: center; justify-content: center; text-align: center;">
+      <a href="https://shorturl.at/cegqx" style="text-decoration: none; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 9vh; color: white;">Invite&nbspNow</a>
+      </button>
+    </div>
+    <br>
+    <footer>
+      <container class="foot">
+      <div class="copyright" style="text-align: center;">
+       <font style="font-size: 28px; padding-left: -10%; font-family: Verdana, Geneva, Tahoma, sans-serif; resize: auto;
+         "> Published on April 13, 2024 | Copyright © 2024 </font>   
+      </div>
+      </container>
+    </footer>
+</body>
+</html>
